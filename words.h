@@ -2,7 +2,13 @@
 #define WORD_WORDS_H
 
 #include <vector>
-#include "word.h"
+#include <map>
+#include <string>
+#include <map>
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
 
 class Words{
 public:
@@ -10,6 +16,6 @@ public:
     void addWord(const string& txt);
     int size();
 private:
-    vector<Word> words;
+    map<string , int> words;
 };
 #endif //WORD_WORDS_H
